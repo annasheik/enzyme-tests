@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: wLZxnxKMPBw+1mPeI4QInE6yGhh3pJszUz7wmqwVQtQRSrV7481NUnNbxn0r0kM8dG+pwhiNO1ULutK80yssYvjPwZ7e2Uxpbr/lqcAl2wyAh0XqNHgXBHD5jG8LrlfBEJMyroGIj2lnsOp9yvE8LlO0eKlmnYfMp5ZKEnwpxmYF20hAD8wCGTr82vLUlu46cNxkELu7owFpxWeoYTZFYFZYXLDmM6lt5wdZWosXXgoi15edkeSWi6ROIU3G5x6hi7xq18LWTKJ6VLgkeUsmm1tXFrbDltrjrhotQsVQwVF68dVy0QMzmgCntpfIyeZfmm37eV5uESqMbLugF9WgMBcFZ/BB0n9I9t6CQYxpZ8e8Y1NhfinwoU1MaWp5/5PSVA6Syqj9ObQPsyHmkKQZAbL4/HrhIMrsvGnWOUqC6GSQmYzsOVafikeqbCD4VtVdKJvJj3my6xYEZ9zGJTy53rwb4mRIk/AucLny0VSPWg2jKBzmV6j90rjKkMdDUf4xDTfeNHLL44lhjW7YjjK+2Lj4vCM1DH0JGYrQsblad8KhY/8ZS3wRUiRdXz8+15lAjK7wu14XJxs7OJ3+tK3ISmuvmou3qXVcjHiLZJRYzz00VrbFFDlDcb8pbL/nk91DacEH1Y3mDwmJvkT9pTEKJdGo+44VfkpBM6BhZoOmbyc=
+  app: mighty-retreat-68915
+  on:
+    repo: annasheik/enzyme-tests
